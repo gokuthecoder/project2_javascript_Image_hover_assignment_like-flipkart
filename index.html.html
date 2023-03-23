@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    div,img{
+        width:60px;
+        display: inline;
+    }
+
+
+    #noimg{
+        display: block;
+        margin: auto;
+        float:inherit;
+        width: 50%;
+    }
+
+</style>
+</head>
+<body>
+<div><img src="images/1.jpg"  id="img1"  alt="" onmouseover="mouseover1()" onmouseout="mouset1()"></div>
+<div><img src="images/2.jpg" id="img2" alt="" onmouseover="mouseover2()" onmouseout="mouset2()"></div>
+<div><img src="images/3.jpeg" id="img3" alt="" onmouseover="mouseover3()" onmouseout="mouset3()"></div>
+<div><img src="images/4.jpg" id="img4" alt="" onmouseover="mouseover4()" onmouseout="mouset4()"></div>
+<div><img src="images/5.jpg" id="img5" alt="" onmouseover="mouseover5()" onmouseout="mouset5()"></div>
+
+<div id="main"><img src="noimg.png" alt="" id="noimg" onmouseout="mouseout1()" onmouseover="mouseover1, mouseover2, mouseover3, mouseover4, mouseover5"></div>
+
+<script>
+       function mouseover1(){
+            document.getElementById('noimg').src="images/1.jpg"
+
+        }
+        function mouset1(){
+            document.getElementById('noimg').src="images/noimg.png"
+
+        }
+
+       function mouseover2(){
+            document.getElementById('noimg').src="images/2.jpg"
+        }
+        function mouset2(){
+            document.getElementById('noimg').src="images/noimg.png"
+
+        }
+
+       function mouseover3(){
+            document.getElementById('noimg').src="images/3.jpeg"
+        }
+        function mouset3(){
+            document.getElementById('noimg').src="images/noimg.png"
+
+        }
+
+       function mouseover4(){
+            document.getElementById('noimg').src="images/4.jpg"
+        }
+        function mouset4(){
+            document.getElementById('noimg').src="images/noimg.png"
+
+        }
+
+
+       function mouseover5(){
+            document.getElementById('noimg').src="images/5.jpg"
+        }
+        function mouset5(){
+            document.getElementById('noimg').src="images/noimg.png"
+
+        }
+
+        function mouseout1(){
+            document.getElementById('noimg').src="images/noimg.png"
+        }
+</script>
+
+</body>
+</html>
